@@ -1,0 +1,62 @@
+.large-font {
+    font-size: 2em;
+    background: #456;
+}
+
+.middle-font {
+    font-size: 14px;
+    background: rgb(150, 25, 66);
+}
+
+#small-font {
+    font-size: 50%;
+    background: yellowgreen;
+}
+
+.large-font::first-letter, .middle-font::first-letter, #small-font::first-letter {
+    color: red;
+    font-size: 3em;
+}
+
+#regulatory-agency a {
+    color: rgba(255, 0, 0, 0.75);
+}
+
+#regulatory-agency a[href*="gov.ua"] {
+    font-weight: bold;
+}
+
+* {
+    margin: 20px;
+}
+
+h3 {
+    background: blue;
+    color: yellow;
+}
+
+nav {
+    border: solid;
+}
+
+nav * {
+    font-size: 150%;
+    background: purple;
+    color: lightgrey;
+}
+
+nav:hover * {
+    background: black;
+}
+
+nav a:visited {
+    color: aqua;
+}
+
+#financial-indicators td {
+    background: darkcyan;
+}
+
+#financial-indicators > table:nth-child(2) > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(1) {
+    background: yellow !important;
+}

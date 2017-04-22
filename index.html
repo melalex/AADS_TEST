@@ -2,7 +2,14 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Nienow Group</title>
+    <style>
+        #services>ul>li {
+            background: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,7 +21,7 @@
         The Dirt says Hot, The Label says Nienow group.
     </blockquote>
 
-    <img src="images/dark1" width="468" height="60">
+    <img src="media/img/dark1" width="468" height="60">
 </div>
 
 <nav>
@@ -45,7 +52,7 @@
 <div id="about-us">
     <h3>About us</h3>
 
-    <p>
+    <p class="large-font">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut <b>elit eget massa</b> finibus facilisis
         eget eu purus. Phasellus maximus congue leo, <i>nec maximus justo sodales vel</i>. Proin sit amet nisl purus.
         Ut tincidunt, dui ac congue<sup>iaculis</sup>, enim sem feugiat odio, at cursus sapien libero nec eros.
@@ -53,7 +60,7 @@
         <u>mollis eget ex quis</u> accumsan. Praesent viverra ex risus, convallis tempus ex scelerisque vel.
     </p>
 
-    <p>
+    <p class="middle-font">
         Morbi eu <em>lectus congue</em>, ullamcorper ligula ac, fermentum erat. Pellentesque
         <strong>dapibus pretium nunc</strong>, a feugiat nunc auctor eget. Suspendisse rutrum elit luctus tortor
         molestie, ut pulvinar felis vehicula. Suspendisse sed
@@ -69,7 +76,7 @@
         orci eu tempor pretium. Aenean efficitur enim sit amet egestas laoreet. Praesent in gravida neque.
     </p>
 
-    <p>
+    <p id="small-font">
         In in urna <abbr title="Nienow group">NG</abbr> eget magna vehicula laoreet. Duis ornare ante elit, quis lacinia
         erat efficitur sit amet.
         Proin fermentum mauris sit amet arcu porttitor, eget commodo lectus finibus. Nullam sollicitudin,
@@ -122,14 +129,14 @@
 <div id="services-detailed">
     <h3>Services (Detailed)</h3>
     <dl>
-        <dt>Amet arcu porttitor</dt>
-        <dd>In in urna eget magna vehicula laoreet.</dd>
-        <dt>Aenean non purus</dt>
-        <dd>Nunc sit amet aliquam nisi.</dd>
-        <dt>Pellentesque dapibus pretium</dt>
-        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
-        <dt>Phasellus in magna</dt>
-        <dd>Duis ornare ante elit, quis lacinia erat efficitur sit amet.</dd>
+        <dt style="background: blue; color: cornsilk">Amet arcu porttitor</dt>
+        <dd style="background: yellow; color: black">In in urna eget magna vehicula laoreet.</dd>
+        <dt style="background: green; color: red">Aenean non purus</dt>
+        <dd style="background: rebeccapurple; color: yellow">Nunc sit amet aliquam nisi.</dd>
+        <dt style="background: blue; color: cornsilk">Pellentesque dapibus pretium</dt>
+        <dd style="background: yellow; color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+        <dt style="background: green; color: red">Phasellus in magna</dt>
+        <dd style="background: rebeccapurple; color: yellow">Duis ornare ante elit, quis lacinia erat efficitur sit amet.</dd>
     </dl>
 </div>
 
@@ -189,11 +196,11 @@
             <legend>Feedback</legend>
             <label>
                 First name
-                <input type="text" maxlength="40">
+                <input type="text" maxlength="40" autofocus tabindex="1">
             </label>
             <label>
                 Last name
-                <input type="text" maxlength="40">
+                <input type="text" maxlength="40" tabindex="2" required>
             </label>
             <label>
                 Middle name
@@ -207,9 +214,9 @@
 
             <label>
                 Тип запиту
-                <input type="radio" name="технічна підтримка" checked>
-                <input type="radio" name="технічна підтримка">
-                <input type="radio" name="інше">
+                <input type="radio" name="технічна підтримка" checked tabindex="4">
+                <input type="radio" name="технічна підтримка" tabindex="5">
+                <input type="radio" name="інше" tabindex="6">
             </label>
 
             <select title="Категорія користувача">
@@ -218,18 +225,43 @@
                 <option>преміум-користувач</option>
             </select>
 
-            <textarea title="Текст запиту" name="Текст запиту" rows="50" cols="20">
+            <textarea title="Текст запиту" name="Текст запиту" rows="50" cols="20" tabindex="3">
             </textarea>
 
             <input type="date" title="Дата запиту:">
             <input type="file" name="Вкладення">
             <input type="number" min="1" max="10" title="Стаж користувача:">
+            <input type="text" name="country" title="Країна" pattern="[A-Za-z]{3}">
+            <input type="email" name="email" title="Email">
+            <input type="url" name="url" title="Веб-сторінка">
 
+            <p contenteditable="true">
+                Nam arcu purus, dapibus vitae vestibulum non, tempor eu felis. Aenean non purus et ante ultrices
+                accumsan id ultricies ex. Fusce mattis orci eu tempor pretium. Aenean efficitur enim sit amet egestas
+                laoreet. Praesent in gravida neque.
+            </p>
 
             <input type="submit" value="Надіслати запит" title="Send">
         </fieldset>
     </form>
 </div>
+
+<div>
+    <video width="400" height="300" controls="controls">
+        <source src="media/video/ex1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        Тег video не поддерживается вашим браузером.
+        <a href="media/video/ex1.mp4">Скачайте видео</a>.
+    </video></div>
+
+<audio controls>
+    <source src="media/audio/ex1.mp3" type="audio/mpeg">
+    Тег audio не поддерживается вашим браузером.
+    <a href="media/audio/ex1.mp3">Скачайте музыку</a>.
+</audio>
+
+<canvas width="380" height="380" id="canvas">
+
+</canvas>
 
 </body>
 </html>
