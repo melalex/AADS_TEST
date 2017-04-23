@@ -40,7 +40,6 @@ nav {
 }
 
 nav * {
-    font-size: 150%;
     background: purple;
     color: lightgrey;
 }
@@ -59,4 +58,104 @@ nav a:visited {
 
 #financial-indicators > table:nth-child(2) > tbody:nth-child(2) > tr:nth-child(3) > td:nth-child(1) {
     background: yellow !important;
+}
+
+.row-3, .row-2 {
+    border: solid;
+}
+
+.row-3 > .col {
+    display: inline-block;
+    width: 25%;
+    margin: 3%;
+}
+
+.row-2 > .col {
+    display: inline-block;
+    width: 30%;
+    margin: 5%;
+}
+
+.col {
+    position: relative;
+    top: 5px !important;
+}
+
+#with-scroll {
+    width: 500px;
+    height: 500px;
+    font-size: 5em;
+    border: solid;
+    padding: 5px;
+    margin: 10px;
+    overflow: scroll;
+}
+
+#with-img {
+    font-size: 5em;
+    border: solid;
+    padding: 5px;
+    margin: 10px;
+    background: url("https://fakeimg.pl/365x365/") fixed;
+}
+
+#newspaper-format {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    border: solid;
+    margin-bottom: 50px;
+}
+
+#contacts input[type=submit]:enabled {
+    color: blue;
+}
+
+#contacts input[type=submit]:disabled {
+    color: red;
+}
+
+#another-font {
+    border: solid;
+    font-family: STIXGeneral, sans-serif;
+    max-width: 90%;
+}
+
+#another-font img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.shadowed {
+    text-shadow: 1px 1px 2px black, 0 0 1em red;
+    background: white;
+}
+
+.block-1 {
+    background: palevioletred;
+    border: solid;
+    border-radius: 5px;
+}
+
+.block-2 {
+    border: solid;
+    background: url("https://fakeimg.pl/365x365/");
+}
+
+.block-3 {
+    background: linear-gradient(to top, #fefcea, #f1da36, #f00);
+    border: solid;
+}
+
+.text-transform {
+    max-width: 500px;
+    border: solid;
+    margin-top: 50px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+
+.text-transform:hover {
+    -webkit-transform: rotate(360deg) scale(2) translate(0, 250px);
+    transform: rotate(360deg) scale(2) translate(0, 250px);
 }

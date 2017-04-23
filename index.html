@@ -5,7 +5,7 @@
     <link href="css/style.css" rel="stylesheet">
     <title>Nienow Group</title>
     <style>
-        #services>ul>li {
+        #services > ul > li {
             background: black;
             color: white;
         }
@@ -21,27 +21,57 @@
         The Dirt says Hot, The Label says Nienow group.
     </blockquote>
 
-    <img src="media/img/dark1" width="468" height="60">
+    <img src="media/img/dark1.jpg" width="468" height="60">
 </div>
 
-<nav>
-    <ul>
-        <li><a href="#about-us">About us</a></li>
-        <li><a href="#regulatory-agency">Regulatory agency</a></li>
-        <li><a href="#founding-documents">Founding documents</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#customers">Our customers</a></li>
-        <li><a href="#services-detailed">Services (Detailed)</a></li>
-        <li><a href="#financial-indicators">Financial indicators</a></li>
-        <li><a href="#financial-indicators">Financial indicators</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-    </ul>
-</nav>
+<div class="row-3">
+    <nav class="col">
+        <ul>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#regulatory-agency">Regulatory agency</a></li>
+            <li><a href="#founding-documents">Founding documents</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#customers">Our customers</a></li>
+            <li><a href="#services-detailed">Services (Detailed)</a></li>
+            <li><a href="#financial-indicators">Financial indicators</a></li>
+            <li><a href="#financial-indicators">Financial indicators</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
 
-<div id="epam-frame">
-    <iframe src="https://www.epam-group.ru/" width="468" height="60" align="left">
-        Ваш браузер не поддерживает фреймы!
-    </iframe>
+    <div id="regulatory-agency" class="col">
+        <h3>Regulatory agency</h3>
+        <ul>
+            <li><a href="http://rada.gov.ua/">Verkhovna Rada of Ukraine</a></li>
+            <li><a href="http://www.president.gov.ua">President of Ukraine</a></li>
+            <li><a href="http://www.minagro.gov.ua/">Ministry of Agrarian Policy and Food of Ukraine</a></li>
+        </ul>
+    </div>
+
+    <div id="founding-documents" class="col">
+        <h3>Founding documents</h3>
+        <ul>
+            <li><a href="files/charter.txt">Charter</a></li>
+            <li><a href="files/treaty.txt">Treaty</a></li>
+            <li><a href="files/certificate.txt">Certificate</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="row-2">
+    <div id="epam-frame" class="col">
+        <iframe src="https://www.epam-group.ru/" width="468" height="60" align="left">
+            Ваш браузер не поддерживает фреймы!
+        </iframe>
+    </div>
+
+    <div>
+        <video width="400" height="300" controls="controls" class="col">
+            <source src="media/video/ex1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            Тег video не поддерживается вашим браузером.
+            <a href="media/video/ex1.mp4">Скачайте видео</a>.
+        </video>
+    </div>
 </div>
 
 <figure>
@@ -86,43 +116,27 @@
     </p>
 </div>
 
-<div id="regulatory-agency">
-    <h3>Regulatory agency</h3>
-    <ul>
-        <li><a href="http://rada.gov.ua/">Verkhovna Rada of Ukraine</a></li>
-        <li><a href="http://www.president.gov.ua">President of Ukraine</a></li>
-        <li><a href="http://www.minagro.gov.ua/">Ministry of Agrarian Policy and Food of Ukraine</a></li>
-    </ul>
-</div>
-
-<div id="founding-documents">
-    <h3>Founding documents</h3>
-    <ul>
-        <li><a href="files/charter.txt">Charter</a></li>
-        <li><a href="files/treaty.txt">Treaty</a></li>
-        <li><a href="files/certificate.txt">Certificate</a></li>
-    </ul>
-</div>
-
 <time>2017-03-14T18:18:18</time>
 
-<div id="services">
-    <h3>Services</h3>
-    <ul>
-        <li>Amet arcu porttitor</li>
-        <li>Aenean non purus</li>
-        <li>Pellentesque dapibus pretium</li>
-        <li>Phasellus in magna</li>
-    </ul>
-</div>
+<div class="row-2">
+    <div id="services" class="col">
+        <h3>Services</h3>
+        <ul>
+            <li>Amet arcu porttitor</li>
+            <li>Aenean non purus</li>
+            <li>Pellentesque dapibus pretium</li>
+            <li>Phasellus in magna</li>
+        </ul>
+    </div>
 
-<div id="customers">
-    <h3>Our customers</h3>
-    <ol>
-        <li><a href="https://www.google.com">Google</a></li>
-        <li><a href="https://www.facebook.com">Facebook</a></li>
-        <li><a href="https://toyota.com">Toyota</a></li>
-    </ol>
+    <div id="customers" class="col">
+        <h3>Our customers</h3>
+        <ol>
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://toyota.com">Toyota</a></li>
+        </ol>
+    </div>
 </div>
 
 
@@ -136,7 +150,9 @@
         <dt style="background: blue; color: cornsilk">Pellentesque dapibus pretium</dt>
         <dd style="background: yellow; color: black">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
         <dt style="background: green; color: red">Phasellus in magna</dt>
-        <dd style="background: rebeccapurple; color: yellow">Duis ornare ante elit, quis lacinia erat efficitur sit amet.</dd>
+        <dd style="background: rebeccapurple; color: yellow">Duis ornare ante elit, quis lacinia erat efficitur sit
+            amet.
+        </dd>
     </dl>
 </div>
 
@@ -225,7 +241,7 @@
                 <option>преміум-користувач</option>
             </select>
 
-            <textarea title="Текст запиту" name="Текст запиту" rows="50" cols="20" tabindex="3">
+            <textarea title="Текст запиту" name="Текст запиту" rows="50" cols="120" tabindex="3">
             </textarea>
 
             <input type="date" title="Дата запиту:">
@@ -241,17 +257,12 @@
                 laoreet. Praesent in gravida neque.
             </p>
 
-            <input type="submit" value="Надіслати запит" title="Send">
+            <input type="submit" value="Надіслати запит" title="Send1">
+            <input type="submit" value="Відміна" title="Send2">
+            <input type="submit" value="Зберегти" title="Send3" disabled>
         </fieldset>
     </form>
 </div>
-
-<div>
-    <video width="400" height="300" controls="controls">
-        <source src="media/video/ex1.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-        Тег video не поддерживается вашим браузером.
-        <a href="media/video/ex1.mp4">Скачайте видео</a>.
-    </video></div>
 
 <audio controls>
     <source src="media/audio/ex1.mp3" type="audio/mpeg">
@@ -262,6 +273,105 @@
 <canvas width="380" height="380" id="canvas">
 
 </canvas>
+
+<div id="with-scroll">
+    Nam arcu purus, dapibus vitae vestibulum non, tempor eu felis. Aenean non purus et ante ultrices
+    accumsan id ultricies ex. Fusce mattis orci eu tempor pretium. Aenean efficitur enim sit amet egestas
+    laoreet. Praesent in gravida neque.
+</div>
+
+<div id="with-img">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a libero non lectus rutrum mollis. In non felis et
+    sapien sollicitudin rutrum. Aliquam erat volutpat. Sed fringilla tortor id mauris mattis, ac dictum felis elementum.
+    Nam auctor volutpat neque nec congue. Aenean ac sem arcu. Maecenas et imperdiet mauris. Nunc auctor lobortis sapien,
+    sed maximus magna accumsan eget. Sed lacinia cursus mauris pharetra condimentum. Morbi imperdiet turpis
+</div>
+
+<div id="newspaper-format">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a libero non lectus rutrum mollis. In non felis et
+    sapien sollicitudin rutrum. Aliquam erat volutpat. Sed fringilla tortor id mauris mattis, ac dictum felis elementum.
+    Nam auctor volutpat neque nec congue. Aenean ac sem arcu. Maecenas et imperdiet mauris.
+
+    Nunc auctor lobortis sapien, sed maximus magna accumsan eget. Sed lacinia cursus mauris pharetra condimentum. Morbi
+    imperdiet turpis rutrum lacinia tristique. Fusce in justo et ante pellentesque sagittis vitae pretium enim. Sed sed
+    risus at nunc fringilla volutpat sit amet ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    malesuada ex vehicula, pretium eros eget, lobortis justo. Morbi faucibus nibh nec dolor volutpat fringilla. Mauris
+    id ligula lectus. Sed bibendum, quam id suscipit gravida, quam velit rutrum nibh, quis rutrum lacus metus accumsan
+    nisi. Duis sit amet tempor mauris.
+
+    Sed id eros erat. Aliquam non faucibus libero, in imperdiet velit. Nullam convallis dictum dignissim. Curabitur
+    molestie scelerisque rutrum. Quisque vitae porta ligula. Morbi convallis enim sed orci placerat porta. Fusce tortor
+    sem, condimentum eu odio varius, ornare faucibus nisl. Suspendisse lobortis dolor augue, sit amet pharetra metus
+    luctus laoreet.
+</div>
+
+<h3 class="shadowed">Lorem ipsum dolor</h3>
+
+<div id="another-font">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a libero non lectus rutrum mollis. In non felis et
+    sapien sollicitudin rutrum. Aliquam erat volutpat. Sed fringilla tortor id mauris mattis, ac dictum felis elementum.
+    Nam auctor volutpat neque nec congue. Aenean ac sem arcu. Maecenas et imperdiet mauris.
+
+    <img src="https://fakeimg.pl/365x365/" alt="Alt">
+
+    Nunc auctor lobortis sapien, sed maximus magna accumsan eget. Sed lacinia cursus mauris pharetra condimentum. Morbi
+    imperdiet turpis rutrum lacinia tristique. Fusce in justo et ante pellentesque sagittis vitae pretium enim. Sed sed
+    risus at nunc fringilla volutpat sit amet ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    malesuada ex vehicula, pretium eros eget, lobortis justo. Morbi faucibus nibh nec dolor volutpat fringilla. Mauris
+    id ligula lectus. Sed bibendum, quam id suscipit gravida, quam velit rutrum nibh, quis rutrum lacus metus accumsan
+    nisi. Duis sit amet tempor mauris.
+
+    Sed id eros erat. Aliquam non faucibus libero, in imperdiet velit. Nullam convallis dictum dignissim. Curabitur
+    molestie scelerisque rutrum. Quisque vitae porta ligula. Morbi convallis enim sed orci placerat porta. Fusce tortor
+    sem, condimentum eu odio varius, ornare faucibus nisl. Suspendisse lobortis dolor augue, sit amet pharetra metus
+    luctus laoreet.
+
+    Nunc auctor lobortis sapien, sed maximus magna accumsan eget. Sed lacinia cursus mauris pharetra condimentum. Morbi
+    imperdiet turpis rutrum lacinia tristique. Fusce in justo et ante pellentesque sagittis vitae pretium enim. Sed sed
+    risus at nunc fringilla volutpat sit amet ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    malesuada ex vehicula, pretium eros eget, lobortis justo. Morbi faucibus nibh nec dolor volutpat fringilla. Mauris
+    id ligula lectus. Sed bibendum, quam id suscipit gravida, quam velit rutrum nibh, quis rutrum lacus metus accumsan
+    nisi. Duis sit amet tempor mauris.
+
+    Nunc auctor lobortis sapien, sed maximus magna accumsan eget. Sed lacinia cursus mauris pharetra condimentum. Morbi
+    imperdiet turpis rutrum lacinia tristique. Fusce in justo et ante pellentesque sagittis vitae pretium enim. Sed sed
+    risus at nunc fringilla volutpat sit amet ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    malesuada ex vehicula, pretium eros eget, lobortis justo. Morbi faucibus nibh nec dolor volutpat fringilla. Mauris
+    id ligula lectus. Sed bibendum, quam id suscipit gravida, quam velit rutrum nibh, quis rutrum lacus metus accumsan
+    nisi. Duis sit amet tempor mauris.
+
+    Nunc auctor lobortis sapien, sed maximus magna accumsan eget. Sed lacinia cursus mauris pharetra condimentum. Morbi
+    imperdiet turpis rutrum lacinia tristique. Fusce in justo et ante pellentesque sagittis vitae pretium enim. Sed sed
+    risus at nunc fringilla volutpat sit amet ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+    malesuada ex vehicula, pretium eros eget, lobortis justo. Morbi faucibus nibh nec dolor volutpat fringilla. Mauris
+    id ligula lectus. Sed bibendum, quam id suscipit gravida, quam velit rutrum nibh, quis rutrum lacus metus accumsan
+    nisi. Duis sit amet tempor mauris.
+
+</div>
+
+<div class="row-3">
+    <div class="col block-1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a libero non lectus rutrum mollis. In non felis et
+        sapien sollicitudin rutrum. Aliquam erat volutpat. Sed fringilla tortor id mauris mattis, ac dictum felis elementum.
+        Nam auctor volutpat neque nec congue. Aenean ac sem arcu. Maecenas et imperdiet mauris.
+    </div>
+    <div class="col block-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a libero non lectus rutrum mollis. In non felis et
+        sapien sollicitudin rutrum. Aliquam erat volutpat. Sed fringilla tortor id mauris mattis, ac dictum felis elementum.
+        Nam auctor volutpat neque nec congue. Aenean ac sem arcu. Maecenas et imperdiet mauris.
+    </div>
+    <div class="col block-3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a libero non lectus rutrum mollis. In non felis et
+        sapien sollicitudin rutrum. Aliquam erat volutpat. Sed fringilla tortor id mauris mattis, ac dictum felis elementum.
+        Nam auctor volutpat neque nec congue. Aenean ac sem arcu. Maecenas et imperdiet mauris.
+    </div>
+</div>
+
+<div class="text-transform">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a libero non lectus rutrum mollis. In non felis et
+    sapien sollicitudin rutrum. Aliquam erat volutpat. Sed fringilla tortor id mauris mattis, ac dictum felis elementum.
+    Nam auctor volutpat neque nec congue. Aenean ac sem arcu. Maecenas et imperdiet mauris.
+</div>
 
 </body>
 </html>
